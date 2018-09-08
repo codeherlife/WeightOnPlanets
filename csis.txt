@@ -1,7 +1,7 @@
-Mercury: 7560.0
-Venus:   18140.0
-Mars: 7540.0
+ Mercury: 7560.0
+  Venus: 18140.0
+    Mars: 7540.0
 Jupiter: 47200.0
-Saturn: 18320.0
-Uranus: 17780.0
+ Saturn: 18320.0
+ Uranus: 17780.0
 Neptune: 22400.0

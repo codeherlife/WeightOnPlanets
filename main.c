@@ -1,6 +1,6 @@
 //
 //  weight.c
-//  HeartLab
+//  WeightLab
 //
 //  Student Name: Melanie Summers;
 //  Student id: 012090935;
@@ -15,7 +15,6 @@
 FILE *fp;
 
 int main(void) {
-    //weight = mass * gravity
     int massOfHuman = 200;
     float mercuryGravity = 37.8;
     float venusGravity = 90.7;
@@ -33,7 +32,6 @@ int main(void) {
     float weightOnNeptune;
     fp = fopen("csis.txt", "w");
     
-    //question is it ok that massOfHuman is an int? cast or?
     weightOnMercury = massOfHuman * mercuryGravity;
     weightOnVenus = massOfHuman * venusGravity;
     weightOnMars = massOfHuman * marsGravity;
@@ -42,20 +40,20 @@ int main(void) {
     weightOnUranus = massOfHuman * uranusGravity;
     weightOnNeptune = massOfHuman * neptuneGravity;
     
-    printf("Mercury: %.1f\n", weightOnMercury);
-    fprintf(fp, "Mercury: %.1f\n", weightOnMercury);
-    printf("Venus: %9.1f\n", weightOnVenus);
-    fprintf(fp, "Venus: %9.1f\n", weightOnVenus);
-    printf("Mars: %.1f\n", weightOnMars);
-    fprintf(fp, "Mars: %.1f\n", weightOnMars);
-    printf("Jupiter: %.1f\n", weightOnJupiter);
-    fprintf(fp, "Jupiter: %.1f\n", weightOnJupiter);
-    printf("Saturn: %.1f\n", weightOnSaturn);
-    fprintf(fp, "Saturn: %.1f\n", weightOnSaturn);
-    printf("Uranus: %.1f\n", weightOnUranus);
-    fprintf(fp, "Uranus: %.1f\n", weightOnUranus);
-    printf("Neptune: %.1f\n", weightOnNeptune);
-    fprintf(fp, "Neptune: %.1f\n", weightOnNeptune);
+    printf("%8s: %.1f\n", "Mercury", weightOnMercury);
+    fprintf(fp, "%8s: %.1f\n", "Mercury", weightOnMercury);
+    printf("%7s: %.1f\n", "Venus", weightOnVenus);
+    fprintf(fp, "%7s: %.1f\n", "Venus", weightOnVenus);
+    printf("%8s: %.1f\n", "Mars", weightOnMars);
+    fprintf(fp, "%8s: %.1f\n", "Mars", weightOnMars);
+    printf("%s: %.1f\n", "Jupiter", weightOnJupiter);
+    fprintf(fp, "%s: %.1f\n", "Jupiter", weightOnJupiter);
+    printf("%7s: %.1f\n", "Saturn", weightOnSaturn);
+    fprintf(fp, "%7s: %.1f\n", "Saturn", weightOnSaturn);
+    printf("%7s: %.1f\n", "Uranus", weightOnUranus);
+    fprintf(fp, "%7s: %.1f\n", "Uranus", weightOnUranus);
+    printf("%s: %.1f\n", "Neptune", weightOnNeptune);
+    fprintf(fp, "%s: %.1f\n", "Neptune", weightOnNeptune);
     
     fclose(fp);
     return 0;
