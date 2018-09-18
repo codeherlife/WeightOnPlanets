@@ -16,13 +16,13 @@ FILE *fp;
 
 int main(void) {
     int massOfHuman = 200;
-    float mercuryGravity = 37.8;
-    float venusGravity = 90.7;
-    float marsGravity = 37.7;
-    float jupiterGravity = 236.0;
-    float saturnGravity = 91.6;
-    float uranusGravity = 88.9;
-    float neptuneGravity = 112.0;
+    float mercuryGravity = 0.378;
+    float venusGravity = 0.907;
+    float marsGravity = 0.377;
+    float jupiterGravity = 2.360;
+    float saturnGravity = 0.916;
+    float uranusGravity = 0.889;
+    float neptuneGravity = 1.120;
     float weightOnMercury;
     float weightOnVenus;
     float weightOnMars;
@@ -40,12 +40,12 @@ int main(void) {
     weightOnUranus = massOfHuman * uranusGravity;
     weightOnNeptune = massOfHuman * neptuneGravity;
     
-    printf("%8s: %.1f\n", "Mercury", weightOnMercury);
-    fprintf(fp, "%8s: %.1f\n", "Mercury", weightOnMercury);
+    printf("%7s: %5.1f\n", "Mercury", weightOnMercury);
+    fprintf(fp, "%7s: %5.1f\n", "Mercury", weightOnMercury);
     printf("%7s: %.1f\n", "Venus", weightOnVenus);
     fprintf(fp, "%7s: %.1f\n", "Venus", weightOnVenus);
-    printf("%8s: %.1f\n", "Mars", weightOnMars);
-    fprintf(fp, "%8s: %.1f\n", "Mars", weightOnMars);
+    printf("%7s: %5.1f\n", "Mars", weightOnMars);
+    fprintf(fp, "%7s: %5.1f\n", "Mars", weightOnMars);
     printf("%s: %.1f\n", "Jupiter", weightOnJupiter);
     fprintf(fp, "%s: %.1f\n", "Jupiter", weightOnJupiter);
     printf("%7s: %.1f\n", "Saturn", weightOnSaturn);
